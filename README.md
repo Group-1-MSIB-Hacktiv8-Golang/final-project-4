@@ -2,7 +2,7 @@
 Ini adalah project keempat dari program MSIB di Hacktiv8. Project kali ini adalah membuat sebuah aplikasi berjudul "Toko Belanja" dimana terdapat seorang admin yang berwenang melakukan perintah CRUD pada category dan juga product dan customer-customer yang bisa melakukan top up untuk membeli product dan juga bisa melihat transaksi pembeliannya.
 
 
-### Base Local URL   : `http://localhost:8080`
+### Base Local URL   : `http://45.32.124.244:8084`
 
 ### End Points
 **USER**
