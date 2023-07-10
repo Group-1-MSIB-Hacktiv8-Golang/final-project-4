@@ -250,22 +250,23 @@ Ini adalah project keempat dari program MSIB di Hacktiv8. Project kali ini adala
     * Kemudian gunakan json berikut untuk mengedit datanya:
         ```json
         {
-            "title":"cute tiny bag",
-            "stock":5,
-            "price":45000,
-            "category_id":1
+            "title":"sprite",
+            "stock":15,
+            "price":6000,
+            "category_id":2
         }
         ```
     * Untuk akses endpointnya dibutuhkan request autorisasi token yang didapatkan dari response endpoint user/login. (**Hanya bisa diakses oleh user dengan role ADMIN**)
     * Output response yang dihasilkan adalah :
         ```json
         {
-            "id": 7,
-            "title": "cute tiny bag",
-            "stock": 5,
-            "price": 45000,
-            "created_at": "2022-12-05T07:05:39.712Z",
-            "updated_at": "2022-12-05T14:10:42.416+07:00"
+            "id": 5,
+            "title": "sprite",
+            "stock": 15,
+            "price": 6000,
+            "category_id": 2,
+            "created_at": "2023-06-22T04:11:05.712Z",
+            "updated_at": "2023-06-22T11:14:47.31+07:00"
         }
         ```
 * DELETE :
