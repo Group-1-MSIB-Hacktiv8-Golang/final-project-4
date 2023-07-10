@@ -1,8 +1,8 @@
-# Final Project 4 Aplikasi Toko Belanja
+# Final Project 4 Kelompok 4 Aplikasi Toko Belanja
 Ini adalah project keempat dari program MSIB di Hacktiv8. Project kali ini adalah membuat sebuah aplikasi berjudul "Toko Belanja" dimana terdapat seorang admin yang berwenang melakukan perintah CRUD pada category dan juga product dan customer-customer yang bisa melakukan top up untuk membeli product dan juga bisa melihat transaksi pembeliannya.
 
 
-### Base Local URL   : `http://45.32.124.244:8084`
+### Base Local URL   : `http://localhost:8080`
 
 ### End Points
 **USER**
@@ -195,25 +195,26 @@ Ini adalah project keempat dari program MSIB di Hacktiv8. Project kali ini adala
     `http://localhost:8080/products` dengan method **GET**
     * Output response yang dihasilkan adalah :
         ```json
-        [
-            {
-		"id": 1,
-		"CreatedAt": "2022-12-05T03:30:11.716Z",
-		"UpdatedAt": "2022-12-05T03:30:11.716Z",
-		"title": "tote bag",
-		"stock": 5,
-		"price": 25000,
-		"category_id": 1
+    [
+        {
+            "id": 1,
+            "CreatedAt": "2022-12-05T03:30:11.716Z",
+            "UpdatedAt": "2022-12-05T03:30:11.716Z",
+            "title": "tote bag",
+            "stock": 5,
+            "price": 25000,
+            "category_id": 1
         },
         {
-		"id": 2,
-		"CreatedAt": "2022-12-05T03:30:57.85Z",
-		"UpdatedAt": "2022-12-05T03:30:57.85Z",
-		"title": "sling bag",
-		"stock": 5,
-		"price": 35000,
-		"category_id": 1
+            "id": 2,
+            "CreatedAt": "2022-12-05T03:30:57.85Z",
+            "UpdatedAt": "2022-12-05T03:30:57.85Z",
+            "title": "sling bag",
+            "stock": 5,
+            "price": 35000,
+            "category_id": 1
         },
+
             ]
         ```
 
@@ -242,7 +243,6 @@ Ini adalah project keempat dari program MSIB di Hacktiv8. Project kali ini adala
             "created_at": "2023-06-22T11:11:05.712+07:00"
             }
         ```
-
 
 * PUT :
     * Misalnya untuk mengedit data product dengan id 7 dapat dengan menggunakan url :
@@ -352,26 +352,25 @@ Ini adalah project keempat dari program MSIB di Hacktiv8. Project kali ini adala
     `http://localhost:8080/transactions` dengan method **POST**
     * Kemudian gunakan json berikut untuk membuat datanya:
         ```json
-	       {
-	    "product_id" : 3,
-	    "quantity" : 4
+	    {
+	        "product_id" : 6,
+	        "quantity" : 1
 		}
         ```
     * Untuk akses endpointnya dibutuhkan request autorisasi token yang didapatkan dari response endpoint user/login.  
     * Output response yang dihasilkan adalah :
     
         ```json
-       {
-	    "message": "Transaction Success",
-	    "transaction_bill": [
-		{
-            "total_price": 8500,
+ {
+            "message": "Transaction Success",
+            "transaction_bill": [
+        {
+            "total_price": 5000,
             "quantity": 1,
-            "product_title": "Pocari Sweat"
-		}
-	    ]
-		}
-
+            "product_title": "fanta"
+        }
+    ]
+}
         ```
 
  
